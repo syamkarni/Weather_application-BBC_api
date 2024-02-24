@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cleanpng.com%2Fpng-weather-computer-icons-weather-1181484%2F&psig=AOvVaw0KIBrIn9R1rS9cn_lypohh&ust=1708854344374000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNjThNPYw4QDFQAAAAAdAAAAABAE"/>
+        <form method="post" class="form">
+            <input type="text" name="city" placeholder="Enter City" class="input">
+            <button type="submit" class="button">Get Weather</button>
+        </form>
+        {% if weather_data %}
+            <div class="weather-data" id="weatherData">
+                {% for item in weather_data %}
+                    <div class="weather-item">
+                        <p class="weather-info">Date: {{ item.date }}</p>
+                        <p class="weather-info">High: {{ item.high }}</p>
+                        <p class="weather-info">Low: {{ item.low }}</p>
+                        <p class="weather-info">Summary: {{ item.summary }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
