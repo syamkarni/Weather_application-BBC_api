@@ -29,8 +29,5 @@ Navigate to `http://localhost:5000` in your web browser. Enter the name of the c
 - BeautifulSoup4
 - Pandas
 
-## License
-[Specify the license or state that it's unlicensed]
-
 ## Disclaimer
 This project is for educational purposes only. The scraping functionality depends on the structure of the BBC Weather website and may require updates if the website's layout changes.
