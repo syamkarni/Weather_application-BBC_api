@@ -13,7 +13,7 @@ This is a Flask-based web application for weather forecasting. It uses web scrap
 To set up this project, follow these steps:
 
 1. Clone the repository:
-git clone http://github.com/syamkarni/Weather_application-BBC_api-)http://github.com/syamkarni/Weather_application-BBC_api-
+git clone http://github.com/syamkarni/Weather_application-BBC_api-)http://github.com/syamkarni/Weather_application-BBC_api
 2. Install the required packages:
 pip install flask requests beautifulsoup4 pandas
 
