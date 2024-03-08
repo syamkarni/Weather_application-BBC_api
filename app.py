@@ -41,6 +41,7 @@ def scrape_weather(city):
     #for i in range(len(datelist)):
     for i in range(12):
         weather_data.append({
+            'name': str(city).capitalize(),
             'date': str(datelist[i].strftime('%d-%m-%Y')),
             'high': daily_high_values[i].text.strip(),
             'low': daily_low_values[i].text.strip(),

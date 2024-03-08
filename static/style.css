@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://wallpapers.com/images/hd/japanese-art-of-sunset-747m7kpkagounlcx.jpg'); /* Add your background image */
+    background-image: url(https://static.vecteezy.com/system/resources/previews/030/658/258/non_2x/downtempo-chillout-minimalist-desktop-wallpaper-free-photo.jpg);
     color: #000000;
     width: 100vw;
     height: 100vh;
@@ -63,7 +63,29 @@ body {
     color: #ffffff;
 
 }
+.weather-info.name {
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 2px solid #333;
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+}
 
-.weather-info {
-    margin-bottom: 5px;
+.weather-info.date {
+    position: absolute; /* Positioned to the right */
+    top: 10px;
+    right: 10px;
+    font-size: 0.8em;
+}
+
+.weather-info.high,
+.weather-info.low {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+.weather-info.summary {
+    font-style: italic;
+    margin-top: 10px;
 }
