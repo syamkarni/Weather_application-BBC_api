@@ -18,8 +18,8 @@
                     <div class="weather-item">
                         <p class="weather-info.name">{{ item.name }}</p>
                         <p class="weather-info.date">Date: {{ item.date }}</p>
-                        <p class="weather-info.high">High: {{ item.high }}</p>
-                        <p class="weather-info.low">Low: {{ item.low }}</p>
+                        <p class="weather-info.high">High: {{ item.high.split(' ')[0] }}C, {{ item.high.split(' ')[1] }}F</p>
+                        <p class="weather-info.low">Low: {{ item.low.split(' ')[0] }}C, {{ item.low.split(' ')[1] }}F</p>
                         <p class="weather-info.summary">Summary: {{ item.summary }}</p>
                     </div>
                 {% endfor %}
